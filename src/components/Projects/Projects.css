@@ -1,0 +1,21 @@
+.projects-section {
+    padding: 80px 5%;
+    background: var(--background);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    color: var(--heading);
+    margin-bottom: 50px;
+}
+
+.projects-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}

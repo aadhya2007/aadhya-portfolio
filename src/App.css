@@ -1,0 +1,76 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section spacing */
+section {
+    padding: 80px 5%;
+}
+
+/* Common heading style */
+section h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    color: var(--heading);
+    margin-bottom: 50px;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin: 12px auto 0;
+    background: #F18F01;
+    border-radius: 10px;
+}
+
+/* Reusable button styles */
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #F18F01;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: #F18F01;
+    border: 2px solid #F18F01;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #1B4F72;
+}
+
+/* Global image settings */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Utility container */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
